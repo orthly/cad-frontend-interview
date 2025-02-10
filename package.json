@@ -1,0 +1,28 @@
+{
+  "name": "cad-3d-fe-live-coding",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev:server & npm run dev:client",
+    "dev:client": "vite",
+    "dev:server": "node server/index.js",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "0.173.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@types/three": "0.173.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
+}
