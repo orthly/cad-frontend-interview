@@ -16,7 +16,7 @@ app.get("/api", async (_, res) => {
 
   res.set("Access-Control-Allow-Origin", "*");
 
-  res.send({
+  res.json({
     position,
     normal,
   });
